@@ -12,7 +12,7 @@ locals {
       method        = "POST",
       parent_resource = (aws_api_gateway_resource.awesome)
       authorizer    = false,
-      create-bucket = false
+
     },
     {
       name          = "cool-lambda"
@@ -21,7 +21,7 @@ locals {
       method        = "GET",
       parent_resource = (aws_api_gateway_resource.cool)
       authorizer    = false,
-      create-bucket = false
+
     },
     {
       name          = "nice-service"
@@ -30,7 +30,7 @@ locals {
       method        = "GET",
       parent_resource = (aws_api_gateway_resource.api)
       authorizer    = false,
-      create-bucket = false
+
     },
     {
       name          = "better-service"
@@ -39,7 +39,7 @@ locals {
       method        = "PUT",
       parent_resource = (aws_api_gateway_resource.api)
       authorizer    = false,
-      create-bucket = false
+
     }
 
   ]
